@@ -32,7 +32,7 @@
 				w.removeEventListener( "scroll", checkFixed, false );
 			}
 			else{
-				w.removeEvent( "onscroll", checkFixed, false );
+				w.detachEvent( "onscroll", checkFixed );
 			}
 		}		
 	}
@@ -57,7 +57,7 @@
 			w.addEventListener( "scroll", checkFixed, false );
 		}
 		else{
-			w.attachEvent( "onscroll", checkFixed, false );
+			w.attachEvent( "onscroll", checkFixed );
 		}
 	}
 }( this ));
