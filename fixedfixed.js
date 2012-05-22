@@ -1,4 +1,4 @@
-/*! CSS position:fixed qualifier. (c)2012 @scottjehl, Filament Group, Inc. Dual license: MIT and/or GPLv2 */
+/*! Fixedfixed: a CSS position:fixed qualifier. (c)2012 @scottjehl, Filament Group, Inc. Dual license: MIT and/or GPLv2 */
 (function( w, undefined ){
 	
 	var htmlclass = "fixed-supported",
