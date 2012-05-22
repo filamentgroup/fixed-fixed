@@ -1,4 +1,4 @@
-# Fixedfixed: a CSS `position:fixed` qualifier
+# Fixed-fixed: a CSS `position:fixed` qualifier
 
 - (c)2012 @scottjehl, Filament Group
 - Dual license: MIT and/or GPLv2
