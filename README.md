@@ -17,7 +17,7 @@ Just qualify any `position:fixed` usage in your stylesheet with a `.fixed-suppor
 
 That class will be present on the HTML element in CSS fixed-supporting browsers. You can apply an initial/degraded layout in browsers that don't support fixed positioning properly by writing selectors that do not use the `.fixed-supported` selector.
 
-See `index.html` for an example.
+See [`index.html`](http://filamentgroup.github.com/fixed-fixed/) for an example.
 
 ## Compressed source (minified with uglify.js):
 
