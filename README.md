@@ -9,6 +9,8 @@ CSS fixed-positioning varies widely in browser support, and it's difficult to te
 
 One caveat in details of the approach: there are a few known browsers that report false results when running the included feature test. These browsers are no longer in development, but since they are popular, this script looks for them name and deems their `position:fixed` support as false immediately, never needing to run the test. Of course, this sort of blacklisting is quite untenable to maintain, so it is only used in the event that a feature test can not be reliably used. These browsers are Android 2.1, Opera Mobile (less than 11.0, 11.5 works but dynamically re-positions instead of true fixed), Opera Mini (latest), and Firefox Mobile (latest).
 
+Hat tip: the idea behind the testing portion of this approach was inspired by @Kangax's [Position Fixed Test](http://kangax.github.com/cft/#IS_POSITION_FIXED_SUPPORTED)
+
 ## Usage
 
 Just qualify any `position:fixed` usage in your stylesheet with a `.fixed-supported` parent class selector, like so:
