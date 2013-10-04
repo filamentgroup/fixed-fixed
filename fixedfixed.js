@@ -61,4 +61,6 @@
 			w.attachEvent( "onscroll", checkFixed );
 		}
 	}
+
+	w.FixedFixed = checkFixed;
 }( this ));
