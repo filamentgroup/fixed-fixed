@@ -3,7 +3,8 @@
 	
 	var htmlclass = "fixed-supported",
 		el = w.document.createElement( "div" ),
-		ua = w.navigator.userAgent;
+		ua = w.navigator.userAgent,
+		docEl = w.document.documentElement;
 	
 	// fix the test element
 	el.style.position = "fixed";
@@ -12,7 +13,7 @@
 	// support test
 	function checkFixed(){
 
-		var scroll = "scrollTop" in w.document.body ? w.document.body.scrollTop : w.document.documentElement.scrollTop;
+		var scroll = "scrollTop" in w.document.body ? w.document.body.scrollTop : docEl.scrollTop;
 
 		// only run test if there's a scroll we can compare
 		if( scroll !== undefined && scroll > 0 && w.document.body ){
@@ -21,7 +22,7 @@
 
 			if( !el.getBoundingClientRect || el.getBoundingClientRect().top !== 0 ){
 				// Fixed is not working or can't be tested
-				w.document.documentElement.className = w.document.documentElement.className.replace( htmlclass, "" );
+				docEl.className = docEl.className.replace( htmlclass, "" );
 			}
 
 			// remove the test element
@@ -50,7 +51,7 @@
 		// If necessary, add the other untestable browsers here...
 	){
 		//add the HTML class for now.
-		w.document.documentElement.className += " " + htmlclass;
+		docEl.className += " " + htmlclass;
 		
 		// bind to scroll event so we can test and potentially degrade
 		if( w.addEventListener ){
