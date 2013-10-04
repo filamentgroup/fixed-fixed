@@ -23,4 +23,4 @@ See [`index.html`](http://filamentgroup.github.com/fixed-fixed/) for an example.
 
 ## Available in [Bower](http://bower.io/)
 
-    bower install filament-fixedfixed
+    bower install filament-fixed
