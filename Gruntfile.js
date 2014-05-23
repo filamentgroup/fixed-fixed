@@ -28,7 +28,17 @@ module.exports = function(grunt) {
 			options: {
 				banner: '<%= banner %>'
 			},
-			dist: {
+			pretty: {
+				src: 'src/<%= name %>.js',
+				dest: 'dist/<%= name %>.build.js',
+				options: {
+					mangle: false,
+					compress: false,
+					beautify: true,
+					preserveComments: 'all'
+				}
+			},
+			min: {
 				src: 'src/<%= name %>.js',
 				dest: 'dist/<%= name %>.min.js'
 			}
