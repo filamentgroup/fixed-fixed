@@ -1,7 +1,7 @@
 {
 	"name": "filament-fixed",
 	"version": "0.1.2",
-	"main": ["fixedfixed.js"],
+	"main": ["dist/fixedfixed.min.js"],
 	"ignore": [
 		"**/.*"
 	],
