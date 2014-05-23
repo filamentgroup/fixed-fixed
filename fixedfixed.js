@@ -41,11 +41,11 @@
 	// if a particular UA is known to return false results with this feature test, try and avoid that UA here.
 	if(
 		// Android 2.1, 2.2, 2.5, and 2.6 Webkit
-		!( ua.match( /Android 2\.[1256]/ ) && ua.indexOf( "AppleWebKit") > -1 ) ||
+		!( ua.match( /Android 2\.[1256]/ ) && ua.indexOf( "AppleWebKit") > -1 ) &&
 		// Opera Mobile less than version 11.0 (7458)
-		!( ua.match( /Opera Mobi\/([0-9]+)/ ) && RegExp.$1 < 7458 ) ||
+		!( ua.match( /Opera Mobi\/([0-9]+)/ ) && RegExp.$1 < 7458 ) &&
 		// Opera Mini
-		!( w.operamini && ({}).toString.call( w.operamini ) === "[object OperaMini]" ) ||
+		!( w.operamini && ({}).toString.call( w.operamini ) === "[object OperaMini]" ) &&
 		// Firefox Mobile less than version 6
 		!( ua.match( /Fennec\/([0-9]+)/ ) && RegExp.$1 < 6 )
 		// If necessary, add the other untestable browsers here...
