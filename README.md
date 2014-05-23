@@ -3,6 +3,8 @@
 - (c)2012 @scottjehl, Filament Group
 - Dual license: MIT and/or GPLv2
 
+[![Build Status](https://travis-ci.org/filamentgroup/fixed-fixed.svg)](https://travis-ci.org/filamentgroup/fixed-fixed)
+
 ## Explanation
 
 CSS fixed-positioning varies widely in browser support, and it's difficult to test. This repo includes a test that attempts to qualify the application of CSS <code>position:fixed</code>. Rather than testing immediately, it waits for the user to scroll, at which point it checks to see if fixed positioning is working properly. Prior to scroll, the script assumes fixed-positioning works, adding a class of `fixed-supported` that can be used to qualify any `position:fixed` CSS rules. When fixed positioning is tested and deemed unsupported, the class is removed, allowing any fixed-positioned elements to safely degrade to some other layout.
