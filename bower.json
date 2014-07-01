@@ -1,9 +1,11 @@
 {
-  "name": "filament-fixed",
-  "version": "0.1.2",
-  "main": ["fixedfixed.js"],
-  "ignore": [
-    "**/.*"
-  ],
-  "dependencies": {}
+	"name": "filament-fixed",
+	"version": "0.1.2",
+	"main": ["dist/fixedfixed.build.js", "dist/fixedfixed.min.js"],
+	"ignore": [
+		"**/.*"
+	],
+	"dependencies": {
+		"qunit": ">=1.12.0"
+	}
 }
