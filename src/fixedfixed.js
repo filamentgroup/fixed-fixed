@@ -20,7 +20,7 @@
 
 			w.document.body.insertBefore( el, w.document.body.firstChild );
 
-			if( !el.getBoundingClientRect || el.getBoundingClientRect().top !== 0 ){
+			if( (!el.getBoundingClientRect || el.getBoundingClientRect().top !== 0) && !(/OS 8_\d+(?:_\d+)? like Mac OS X/.test(ua)) ){
 				// Fixed is not working or can't be tested
 				docEl.className = docEl.className.replace( htmlclass, "" );
 			}
