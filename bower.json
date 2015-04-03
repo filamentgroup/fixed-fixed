@@ -5,7 +5,7 @@
 	"ignore": [
 		"**/.*"
 	],
-	"dependencies": {
+	"devDependencies": {
 		"qunit": ">=1.12.0"
 	}
 }
