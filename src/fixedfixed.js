@@ -47,7 +47,9 @@
 		// Opera Mini
 		!( w.operamini && ({}).toString.call( w.operamini ) === "[object OperaMini]" ) ||
 		// Firefox Mobile less than version 6
-		!( ua.match( /Fennec\/([0-9]+)/ ) && RegExp.$1 < 6 )
+		!( ua.match( /Fennec\/([0-9]+)/ ) && RegExp.$1 < 6 ) ||
+		// iOS8 version 8.1 does not support "getBoundingClientRect"
+		!( ua.match( /iPhone OS 8/ ) && ua.indexOf("AppleWebKit") > -1 )
 		// If necessary, add the other untestable browsers here...
 	){
 		//add the HTML class for now.
