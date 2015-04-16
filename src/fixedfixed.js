@@ -63,4 +63,4 @@
 	}
 
 	w.FixedFixed = checkFixed;
-}( this ));
+}( window ));

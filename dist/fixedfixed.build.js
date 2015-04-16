@@ -1,5 +1,5 @@
-/*! fixed-fixed - v0.1.0 - 2014-05-23
-* Copyright (c) 2014 ; Licensed MIT */
+/*! fixed-fixed - v0.1.0 - 2015-01-15
+* Copyright (c) 2015 ; Licensed MIT */
 /*! Fixedfixed: a CSS position:fixed qualifier. (c)2012 @scottjehl, Filament Group, Inc. Dual license: MIT and/or GPLv2 */
 (function(w, undefined) {
     var htmlclass = "fixed-supported", el = w.document.createElement("div"), ua = w.navigator.userAgent, docEl = w.document.documentElement;
@@ -42,4 +42,4 @@
         }
     }
     w.FixedFixed = checkFixed;
-})(this);
+})(window);
