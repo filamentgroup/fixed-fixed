@@ -1,6 +1,6 @@
 {
 	"name": "fixed-fixed",
-	"version": "0.1.2",
+	"version": "0.1.2+niksy.0.1.0",
 	"description": "CSS position:fixed qualifier.",
 	"main": "src/fixedfixed.js",
 	"scripts": {
