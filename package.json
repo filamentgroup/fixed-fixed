@@ -1,11 +1,11 @@
 {
 	"name": "fixed-fixed",
-	"version": "0.1.0",
+	"version": "0.1.2",
 	"description": "CSS position:fixed qualifier.",
 	"main": "src/fixedfixed.js",
 	"scripts": {
 		"test": "./node_modules/.bin/grunt test",
-		"postinstall": "./node_modules/.bin/bower install"
+		"build": "grunt lint && grunt uglify"
 	},
 	"repository": {
 		"type": "git",
