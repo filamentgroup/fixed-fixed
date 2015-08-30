@@ -1,11 +1,11 @@
 {
 	"name": "filament-fixed",
-	"version": "0.1.2",
-	"main": ["dist/fixedfixed.build.js", "dist/fixedfixed.min.js"],
+	"version": "0.1.2+niksy.0.1.0",
+	"main": "src/fixedfixed.js",
 	"ignore": [
 		"**/.*"
 	],
-	"dependencies": {
+	"devDependencies": {
 		"qunit": ">=1.12.0"
 	}
 }
