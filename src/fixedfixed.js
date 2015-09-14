@@ -58,7 +58,7 @@
 		docEl.className += " " + htmlclass;
 	}
 	
-	if (!failedFromUA && !succeedFromUA) {
+	if (!failedFromUA && !succeededFromUA) {
 		// do the test
 		
 		// bind to scroll event so we can test and potentially degrade
