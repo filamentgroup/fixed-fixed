@@ -40,13 +40,13 @@
 
 	var failedFromUA = 
 		// Android 2.1, 2.2, 2.5, and 2.6 Webkit
-		!( ua.match( /Android 2\.[1256]/ ) && ua.indexOf( "AppleWebKit") > -1 ) ||
+		( ua.match( /Android 2\.[1256]/ ) && ua.indexOf( "AppleWebKit") > -1 ) ||
 		// Opera Mobile less than version 11.0 (7458)
-		!( ua.match( /Opera Mobi\/([0-9]+)/ ) && RegExp.$1 < 7458 ) ||
+		( ua.match( /Opera Mobi\/([0-9]+)/ ) && RegExp.$1 < 7458 ) ||
 		// Opera Mini
-		!( w.operamini && ({}).toString.call( w.operamini ) === "[object OperaMini]" ) ||
+		( w.operamini && ({}).toString.call( w.operamini ) === "[object OperaMini]" ) ||
 		// Firefox Mobile less than version 6
-		!( ua.match( /Fennec\/([0-9]+)/ ) && RegExp.$1 < 6 );
+		( ua.match( /Fennec\/([0-9]+)/ ) && RegExp.$1 < 6 );
 	
 	var succeededFromUA =
 		// iOS fails the feature test
