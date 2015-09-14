@@ -53,12 +53,12 @@
 		(ua.match(/iPad|iPhone|iPod/) && !window.MSStream);
 		
 	// if a particular UA is known to return false results with this feature test, try and avoid that UA here.
-	if(!failFromUA){
+	if(!failedFromUA){
 		//add the HTML class for now.
 		docEl.className += " " + htmlclass;
 	}
 	
-	if (!failFromUA && !succeedFromUA) {
+	if (!failedFromUA && !succeedFromUA) {
 		// do the test
 		
 		// bind to scroll event so we can test and potentially degrade
