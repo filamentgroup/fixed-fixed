@@ -4,7 +4,8 @@
 	var htmlclass = "fixed-supported",
 		el = w.document.createElement( "div" ),
 		ua = w.navigator.userAgent,
-		docEl = w.document.documentElement;
+		docEl = w.document.documentElement,
+		allowRemove = !( ua.match( /iPad; CPU OS 8|iPhone; CPU OS 8/ ) && ua.indexOf("AppleWebKit") >= 0 );
 
 	// fix the test element
 	el.style.position = "fixed";
@@ -20,7 +21,7 @@
 
 			w.document.body.insertBefore( el, w.document.body.firstChild );
 
-			if( !el.getBoundingClientRect || el.getBoundingClientRect().top !== 0 ){
+			if(allowRemove && ( !el.getBoundingClientRect || el.getBoundingClientRect().top !== 0 )){
 				// Fixed is not working or can't be tested
 				docEl.className = docEl.className.replace( htmlclass, "" );
 			}
