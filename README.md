@@ -1,3 +1,5 @@
+:warning: This project is archived and the repository is no longer maintained. 
+
 # Fixed-fixed: a CSS `position:fixed` qualifier
 
 - (c)2012 @scottjehl, Filament Group
